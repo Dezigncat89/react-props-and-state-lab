@@ -15,6 +15,42 @@ class App extends React.Component {
     }
   }
 
+  const handleSelection = pet => {
+    const thisSelected = selectedpets.includes(pet);
+   
+‍
+‍
+    const newSelections = thisSelected
+    ? selectedpets.filter(currentpet => currentpet !== pet)
+    : [...selectedpets, pet];
+  setSelectedpets(newSelections);};
+return (
+‍
+  <div classname="App"></div>
+‍
+‍
+    <filter label="Select a Pet" onapply="{()" ==""> alert(selectedPets)}></filter>
+‍
+      <div classname="pets-list"></div>
+‍
+        {pets.map((pet, index) => {
+          const thisSelected = selectedPets.includes(pet);
+          return (
+            <label key="{index}"></label>
+‍
+              
+                type="checkbox"
+                checked={thisSelected}
+                onChange={() => {‍
+                  handleSelection(pet);
+                }}
+              />
+‍
+
+              <span classname="ml-2 text-base text-gray-500 font-heading"></span>
+‍
+              {pet}
+‍
   render() {
     return (
       <div className="ui container">
