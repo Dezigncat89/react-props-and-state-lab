@@ -15,6 +15,7 @@ class App extends React.Component {
     }
   }
 
+  //My Code for filtering Pets
   const handleSelection = pet => {
     const thisSelected = selectedpets.includes(pet);
    
@@ -50,6 +51,7 @@ return (
               <span classname="ml-2 text-base text-gray-500 font-heading"></span>
 ‍
               {pet}
+  //end code
 ‍
   render() {
     return (
